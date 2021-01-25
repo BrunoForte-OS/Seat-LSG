@@ -1,0 +1,5 @@
+node_modules
+dist/*
+src/sass/fonticon.css
+src/sass/outsystemsui.css
+package-lock.json
