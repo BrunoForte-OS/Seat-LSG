@@ -146,12 +146,254 @@
 
 /* Changed CSS variables to adapt the Theme to the Seat mockups */
 :root {
-    --color-primary: blue;
+
+    /* Color - Brand */
+    --color-primary: #EA5D1A;
+    --color-secondary: #EA5D1A;
+
+    /* Typography - Size */
+    --font-size-display: 68px;
+    --font-size-h1: 50px;
+    --font-size-h2: 38px;
+    --font-size-h3: 30px;
+    --font-size-h4: 25px;
+    --font-size-h5: 20px;
+    --font-size-h6: 16px;
+    --font-size-base: 16px;
+    --font-size-s: 14px;
+    --font-size-xs: 12px;
+
+    /* Color - Extended */
+    --color-red-lightest: #F9EAEA;
+    --color-red-lighter: #F18C76;
+    --color-red-light: #EC6B5F;
+    --color-red: #E63A2B;
+    --color-red-dark: #A1291E;
+    --color-red-darker: #8C1D1D;
+    --color-red-darkest: #6E1717;
+
+    --color-yellow-lightest: #FEF5E6;
+    --color-yellow-lighter: #FFEFA5;
+    --color-yellow-light: #FFE56E;
+    --color-yellow: #FFDE4A;
+    --color-yellow-dark: #E6C843;
+    --color-yellow-darker: #B39B34;
+    --color-yellow-darkest: #806F25;
+
+    --color-lime-lightest: #F3F9F5;
+    --color-lime-lighter: #CEE7D5;
+    --color-lime-light: #B5DCC1;
+    --color-lime: #84C497;
+    --color-lime-dark: #5C896A;
+    --color-lime-darker: #42624C;
+    --color-lime-darkest: #283B2D;
+
+    /* Typography - Weight */
+    --font-medium: 500;
+
+
+    /* OUTSYSTEMSUI - REMOVE LATER */
+
+
+
+    /* Typography - Weight */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+
+    --color-focus-outer: #FFD337;
+    --color-focus-inner: var(--color-neutral-10);
+
+    /* Color - Extended */
+    --color-pink-lightest: #fbebf0;
+    --color-pink-lighter: #efadc4;
+    --color-pink-light: #e27098;
+    --color-pink: #d6336c;
+    --color-pink-dark: #b62b5c;
+    --color-pink-darker: #96244c;
+    --color-pink-darkest: #761c3b;
+
+    --color-grape-lightest: #f7ecfa;
+    --color-grape-lighter: #dfb2e9;
+    --color-grape-light: #c678d9;
+    --color-grape: #ae3ec9;
+    --color-grape-dark: #9435ab;
+    --color-grape-darker: #7a2b8d;
+    --color-grape-darkest: #60226f;
+
+    --color-violet-lightest: #f1edfd;
+    --color-violet-lighter: #c6b6f6;
+    --color-violet-light: #9b7fef;
+    --color-violet: #7048e8;
+    --color-violet-dark: #5f3dc5;
+    --color-violet-darker: #4e32a2;
+    --color-violet-darkest: #3e2880;
+
+    --color-indigo-lightest: #eceffd;
+    --color-indigo-lighter: #b3c1f7;
+    --color-indigo-light: #7b92f1;
+    --color-indigo: #4263eb;
+    --color-indigo-dark: #3854c8;
+    --color-indigo-darker: #2e45a5;
+    --color-indigo-darkest: #243681;
+
+    --color-blue-lightest: #e8f2fa;
+    --color-blue-lighter: #a3c9ea;
+    --color-blue-light: #5fa1db;
+    --color-blue: #1a79cb;
+    --color-blue-dark: #1667ad;
+    --color-blue-darker: #12558e;
+    --color-blue-darkest: #0e4370;
+
+    --color-cyan-lightest: #e7f2f4;
+    --color-cyan-lighter: #9eccd3;
+    --color-cyan-light: #56a6b2;
+    --color-cyan: #0d8091;
+    --color-cyan-dark: #0b6d7b;
+    --color-cyan-darker: #095a66;
+    --color-cyan-darkest: #074650;
+
+    --color-teal-lightest: #e6f2ef;
+    --color-teal-lighter: #9cccbd;
+    --color-teal-light: #52a58c;
+    --color-teal: #087f5b;
+    --color-teal-dark: #076c4d;
+    --color-teal-darker: #065940;
+    --color-teal-darkest: #044632;
+
+    --color-green-lightest: #ebf7ed;
+    --color-green-lighter: #afe0b8;
+    --color-green-light: #73c982;
+    --color-green: #37b24d;
+    --color-green-dark: #2f9741;
+    --color-green-darker: #267d36;
+    --color-green-darkest: #1e622a;
+
+    --color-orange-lightest: #fef0e6;
+    --color-orange-lighter: #fcc29c;
+    --color-orange-light: #f99551;
+    --color-orange: #f76707;
+    --color-orange-dark: #d25806;
+    --color-orange-darker: #ad4805;
+    --color-orange-darkest: #883904;
+
+
+    /* Color - Neutral */
+    --color-neutral-0: #ffffff;
+    --color-neutral-1: #f8f9fa;
+    --color-neutral-2: #f1f3f5;
+    --color-neutral-3: #e9ecef;
+    --color-neutral-4: #dee2e6;
+    --color-neutral-5: #ced4da;
+    --color-neutral-6: #adb5bd;
+    --color-neutral-7: #6a7178;
+    --color-neutral-8: #4f575e;
+    --color-neutral-9: #272b30;
+    --color-neutral-10: #101213;
+
+    /* Color - Semantic */
+    --color-error-light: #fceaea;
+    --color-error: #dc2020;
+    --color-warning-light: #fdf6e5;
+    --color-warning: #e9a100;
+    --color-success-light: #eaf3eb;
+    --color-success: #29823b;
+    --color-info-light: #e5f5fc;
+    --color-info: #017aad;
+
+    /* Space - Sizes */
+    --space-none: 0;
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-base: 16px;
+    --space-m: 24px;
+    --space-l: 32px;
+    --space-xl: 40px;
+    --space-xxl: 48px;
+
+    /* Border Radius */
+    --border-radius-none: 0;
+    --border-radius-soft: 4px;
+    --border-radius-rounded: 100px;
+    --border-radius-circle: 100%;
+
+    /* Border Size */
+    --border-size-none: 0;
+    --border-size-s: 1px;
+    --border-size-m: 2px;
+    --border-size-l: 3px;
+
+    /* Elevation / Shadow */
+    --shadow-none: none;
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, .1);
+    --shadow-s: 0 2px 4px rgba(0, 0, 0, .1);
+    --shadow-m: 0 4px 6px rgba(0, 0, 0, .1);
+    --shadow-l: 0 6px 8px rgba(0, 0, 0, .1);
+    --shadow-xl: 0 8px 10px rgba(0, 0, 0, .1);
+
+    /* App Settings */
+    --header-color: #ffffff;
+    --color-background-body: #f3f6f8;
+    --color-background-login: #ffffff;
+    --header-size: 56px;
+    --header-size-content: 48px;
+    --side-menu-size: 300px;
+    --bottom-bar-size: 56px;
+
+    /* iOS Safe Areas (Notch Support) */
+    --os-safe-area-top: env(safe-area-inset-top);
+    --os-safe-area-right: env(safe-area-inset-right);
+    --os-safe-area-bottom: env(safe-area-inset-bottom);
+    --os-safe-area-left: env(safe-area-inset-left);
 }
 
-a, a:visited {
-    color:red;
+/* ===================================================================== */
+/*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
+/* ===================================================================== */
+html {
+    font-family: "Seat Bcn";
 }
+
+/* ===================================================================== */
+/*       $2.4 - HTML Elements - Inputs and Selectors                     */
+/* ===================================================================== */
+.form-control[data-input],
+.form-control[data-textarea] {
+    background-color: transparent;
+    border: 0;
+    border-bottom: var(--border-size-s) solid var(--color-neutral-5);
+    border-radius: 0;
+
+    &:focus,
+    &:hover {
+        border: 0;
+        border-bottom: var(--border-size-s) solid var(--color-neutral-5);
+    }
+    &[disabled] {
+        background-color: transparent;
+        border:0;
+        border-bottom: var(--border-size-s) solid var(--color-neutral-5);
+    }
+    &[disabled]::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--color-neutral-5);
+        opacity: 1;
+        /* Firefox */
+    }
+
+    &[disabled]:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color:var(--color-neutral-5);
+    }
+
+    &[disabled]::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color:var(--color-neutral-5);
+    }
+}
+
 /* ===================================================================== */
 /*  $3.1.2 - Page Layout - Header Content 
 /* ===================================================================== */
@@ -161,4 +403,156 @@ a, a:visited {
 
 .header-content>.layout-application-title>[data-block*="ApplicationTitle"] .application-name {
     margin-right: var(--space-m);
-}  
+}
+
+/* ===================================================================== */
+/*              $4.1.3   - Patterns - Adaptive - MasterDetail            */
+/* ===================================================================== */
+.list-item-content .list-item-content-right i:not([class*="text-"]) {
+    color: var(--color-primary);
+}
+
+/* ===================================================================== */
+/*              $4.2.1   - Patterns - Content - Accordion                */
+/* ===================================================================== */
+.section-expandable.is--open .section-expandable-title {
+    font-weight: var(--font-regular);
+}
+
+/* ===================================================================== */
+/*              $4.2.8   - Patterns - Content - ChatMessage              */
+/* ===================================================================== */
+.chat.right {
+
+    .chat-message,
+    .avatar {
+        background-color: var(--color-primary);
+    }
+}
+
+/* ===================================================================== */
+/*              $4.2.12  - Patterns - Content - Section                  */
+/* ===================================================================== */
+.section-title {
+    border-bottom: var(--border-size-s) solid var(--color-neutral-5);
+    font-weight: var(--font-regular);
+}
+
+/* ===================================================================== */
+/*              $4.2.15  - Patterns - Content - UserAvatar               */
+/* ===================================================================== */
+.avatar {
+    border: var(--border-size-s) solid currentColor;
+}
+
+/* ===================================================================== */
+/*              $4.3.5   - Patterns - Interaction - DatePicker           */
+/* ===================================================================== */
+.pika-title {
+    padding: var(--space-m) var(--space-base) var(--space-m) var(--space-base);
+}
+
+.pika-labels {
+    justify-content: center;
+    order: 2;
+}
+
+.pika-prev {
+    order: 1;
+}
+
+.pika-next {
+    order: 3;
+}
+
+.pika-label {
+    color: var(--color-neutral-9);
+    font-weight: var(--font-medium);
+}
+
+/* ===================================================================== */
+/*              $4.3.6   - Patterns - Interaction - DropdownSearch       */
+/* ===================================================================== */
+.choices.is-open.is-focused .choices__inner,
+.choices[data-type="select-multiple"].is-open.is-focused .choices__inner {
+    border: 0;
+}
+
+.choices__list--dropdown {
+    .choices__item--selectable.is-highlighted {
+        background-color: var(--color-primary);
+        border-radius: var(--border-radius-soft);
+        color: var(--color-neutral-0);
+    }
+
+    .choices__list {
+        padding: var(--space-s);
+    }
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+    border-color: var(--color-neutral-5);
+}
+
+/* ===================================================================== */
+/*              $4.3.7   - Patterns - Interaction - DropdownTags         */
+/* ===================================================================== */
+.choices[data-type=select-multiple] {
+    &.is-open.is-focused .choices__inner {
+        border-bottom: var(--border-size-s) solid var(--color-neutral-5);
+        border-radius: 0;
+    }
+
+    .choices__input,
+    .choices__inner {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .choices__inner {
+        border-bottom: var(--border-size-s) solid var(--color-neutral-5);
+    }
+
+
+    .choices__list.choices__list--dropdown.is-active {
+        padding: var(--space-s) 0 var(--space-s) var(--space-s);
+    }
+
+    .choices__list--dropdown .choices__item {
+        margin-right: 8px;
+    }
+
+    .choices__item:not(.choices__item--choice) {
+        background-color: var(--color-neutral-6);
+        border: var(--border-size-s) solid var(--color-neutral-6);
+        color: var(--color-neutral-0);
+    }
+
+    .choices__button::after {
+        color: var(--color-neutral-0);
+    }
+}
+
+/* ===================================================================== */
+/*              $4.4.7   - Patterns - Navigation - Wizard                */
+/* ===================================================================== */
+.wizard-wrapper-item{
+    &.active .wizard-item-icon {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        color: var(--color-neutral-0);
+    }
+
+    &.past .wizard-item-icon {
+        background-color: var(--color-neutral-0);
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+    }
+}
+
+.badge[class*=-lightest] {
+    background: var(--color-neutral-0);
+    border: var(--border-size-s) solid currentColor;
+}
