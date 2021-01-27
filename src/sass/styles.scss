@@ -1,6 +1,6 @@
 /* ===================================================================== */
 /* ===================================================================== */
-/* [ClientName]_Theme                                                    */
+/* Seat_Theme                                                            */
 /*                                                                       */
 /*   [NOTE]                                                              */
 /*      - This theme is based on Outsystems UI Theme Structure           */
@@ -95,6 +95,7 @@
 /*       $5.8  - Widgets - Popover                                       */
 /*       $5.9  - Widgets - Popup                                         */
 /*       $5.10 - Widgets - FeedbackMessage                               */
+/*       $5.10 - Widgets - Checkbox                                      */
 /*  $6 - Styles                                                          */
 /*       $6.1 - Styles - Typography                                      */
 /*              $6.1.1 - Styles - Typography - Sizes Desktop             */
@@ -149,7 +150,7 @@
 
     /* Color - Brand */
     --color-primary: #EA5D1A;
-    --color-secondary: #DEDAD4 ;
+    --color-secondary: #DEDAD4;
 
     /* Typography - Size */
     --font-size-display: 68px;
@@ -356,11 +357,24 @@ html {
     font-family: "Seat Bcn";
 }
 
+.text-primary-color {
+    color: var(--color-primary);
+}
+
+/* ===================================================================== */
+/*       $2.1 - HTML Elements - Links                                    */
+/* ===================================================================== */
+a:hover,
+a:focus,
+a:active {
+    color: #303D60;
+    text-decoration: none;
+}
+
 /* ===================================================================== */
 /*       $2.4 - HTML Elements - Inputs and Selectors                     */
 /* ===================================================================== */
-.form-control[data-input],
-.form-control[data-textarea] {
+.form-control[data-input] {
     background-color: transparent;
     border: 0;
     border-bottom: var(--border-size-s) solid var(--color-neutral-5);
@@ -371,11 +385,13 @@ html {
         border: 0;
         border-bottom: var(--border-size-s) solid var(--color-neutral-5);
     }
+
     &[disabled] {
         background-color: transparent;
-        border:0;
+        border: 0;
         border-bottom: var(--border-size-s) solid var(--color-neutral-5);
     }
+
     &[disabled]::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: var(--color-neutral-5);
@@ -385,12 +401,51 @@ html {
 
     &[disabled]:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
-        color:var(--color-neutral-5);
+        color: var(--color-neutral-5);
     }
 
     &[disabled]::-ms-input-placeholder {
         /* Microsoft Edge */
-        color:var(--color-neutral-5);
+        color: var(--color-neutral-5);
+    }
+}
+
+/* ===================================================================== */
+/*       $2.5 - HTML Elements - Buttons                                  */
+/* ===================================================================== */
+.desktop .btn:not(.btn-cancel) {
+    &:hover {
+        filter: opacity(0.7);
+    }
+
+}
+
+.btn.btn-primary {
+    &:hover:active {
+        border: 0;
+        filter: brightness(0.9);
+    }
+
+}
+
+.btn:not(.btn-cancel) {
+    border: var(--border-size-m) solid currentColor;
+
+    &:hover:active {
+        background-color: rgba(234, 93, 26, 0.15);
+        border: var(--border-size-m) solid currentColor;
+    }
+
+    &[class*="background-"] {
+        border: var(--border-size-m) solid transparent;
+    }
+}
+
+.btn-cancel {
+    border: var(--border-size-m) solid var(--color-neutral-6);
+
+    &:focus {
+        border: var(--border-size-m) solid #90C2FC;
     }
 }
 
@@ -405,6 +460,37 @@ html {
     margin-right: var(--space-m);
 }
 
+/* ===================================================================== */
+/*       $3.2 - Page Layout - Menu                                       */
+/* ===================================================================== */
+.submenu.active .submenu-item,
+.desktop .submenu.active .submenu-header:hover .submenu-item,
+.submenu.active .submenu-item a {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.layout-side .app-menu-content .application-name {
+    padding: var(--space-s) var(--space-m)
+}
+
+.layout-side .app-menu-content {
+    padding-top: 55px;
+}
+
+.layout-side .submenu.active .submenu-header,
+.tablet .submenu.active .submenu-header,
+.phone .submenu.active .submenu-header {
+    border-left: var(--border-size-m) solid transparent;
+}
+
+.layout-side .application-name {
+    height: auto;
+    left: 24px;
+    position: absolute;
+    top: 5px;
+    z-index: 9999;
+}
 /* ===================================================================== */
 /*              $4.1.3   - Patterns - Adaptive - MasterDetail            */
 /* ===================================================================== */
@@ -538,7 +624,7 @@ html {
 /* ===================================================================== */
 /*              $4.4.7   - Patterns - Navigation - Wizard                */
 /* ===================================================================== */
-.wizard-wrapper-item{
+.wizard-wrapper-item {
     &.active .wizard-item-icon {
         background-color: var(--color-primary);
         border-color: var(--color-primary);
@@ -552,8 +638,25 @@ html {
     }
 }
 
+/* ===================================================================== */
+/*              $4.5.1   - Patterns - Numbers - Badge                    */
+/* ===================================================================== */
 .badge[class*=-lightest] {
     background: var(--color-neutral-0);
     border: var(--border-size-s) solid currentColor;
 }
- 
+
+/* ===================================================================== */
+/*       $5.7  - Widgets - ButtonGroup                                   */
+/* ===================================================================== */
+.button-group-item {
+    border: var(--border-size-m) solid var(--color-primary);
+}
+
+/* ===================================================================== */
+/*       $5.10 - Widgets - Checkbox                                      */
+/* ===================================================================== */
+[data-checkbox]:checked:before {
+    background: var(--color-neutral-10);
+    border: var(--border-size-s) solid var(--color-neutral-10);
+}
