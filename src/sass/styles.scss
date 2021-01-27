@@ -486,10 +486,10 @@ a:active {
 
 .layout-side .application-name {
     height: auto;
-    left: 24px;
+    left: var(--space-m);
     position: absolute;
-    top: 5px;
-    z-index: 9999;
+    top: var(--space-s);
+    z-index: 101;
 }
 /* ===================================================================== */
 /*              $4.1.3   - Patterns - Adaptive - MasterDetail            */
