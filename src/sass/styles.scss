@@ -95,7 +95,8 @@
 /*       $5.8  - Widgets - Popover                                       */
 /*       $5.9  - Widgets - Popup                                         */
 /*       $5.10 - Widgets - FeedbackMessage                               */
-/*       $5.10 - Widgets - Checkbox                                      */
+/*       $5.11 - Widgets - Checkbox                                      */
+/*       $5.11 - Widgets - Dropdown                                      */
 /*  $6 - Styles                                                          */
 /*       $6.1 - Styles - Typography                                      */
 /*              $6.1.1 - Styles - Typography - Sizes Desktop             */
@@ -164,191 +165,118 @@
     --font-size-s: 14px;
     --font-size-xs: 12px;
 
-    /* Color - Extended */
-    --color-red-lightest: #F9EAEA;
-    --color-red-lighter: #F18C76;
-    --color-red-light: #EC6B5F;
-    --color-red: #E63A2B;
-    --color-red-dark: #A1291E;
-    --color-red-darker: #8C1D1D;
-    --color-red-darkest: #6E1717;
 
-    --color-yellow-lightest: #FEF5E6;
-    --color-yellow-lighter: #FFEFA5;
-    --color-yellow-light: #FFE56E;
-    --color-yellow: #FFDE4A;
-    --color-yellow-dark: #E6C843;
-    --color-yellow-darker: #B39B34;
-    --color-yellow-darkest: #806F25;
+    /* color - seat - extended */
+    --color-seat-red: #e63a2b;
+    --color-seat-red-light: #ec6b5f;
+    --color-seat-red-lightest: #f18c76;
 
-    --color-lime-lightest: #F3F9F5;
-    --color-lime-lighter: #CEE7D5;
-    --color-lime-light: #B5DCC1;
-    --color-lime: #84C497;
-    --color-lime-dark: #5C896A;
-    --color-lime-darker: #42624C;
-    --color-lime-darkest: #283B2D;
+    --color-seat-orange: #ee7d05;
+    --color-seat-orange-light: #ed9551;
+    --color-seat-orange-lightest: #f8b877;
+
+    --color-seat-beige: #ded1a7;
+    --color-seat-yellow: #ffde4a;
+    --color-seat-yellow-dark: #fcc446;
+
+    --color-seat-green: #84c497;
+    --color-seat-green-light: #b7d8aa;
+    --color-seat-lime: #d8dc48;
+
+    --color-seat-cyan: #00afac;
+    --color-seat-cyan-light: #8ececf;
+    --color-seat-teal: #9fb9ae;
+
+    --color-seat-blue: #6baee0;
+    --color-seat-blue-light: #95c0d6;
+    --color-seat-grey-light: #dedad4;
+
+    --color-seat-grape: #cf7fa1;
+    --color-seat-grape-light: #b793a9;
+    --color-seat-grape-lightest: #d1b8c7;
+
+    --color-seat-brown: #9f948e;
+    --color-seat-brown-light: #d4af9c;
+    --color-seat-brown-lightest: #e8d0c1;
 
     /* Typography - Weight */
     --font-medium: 500;
 
-
-    /* OUTSYSTEMSUI - REMOVE LATER */
-
-
-
-    /* Typography - Weight */
-    --font-light: 300;
-    --font-regular: 400;
-    --font-semi-bold: 600;
-    --font-bold: 700;
-
-
-    --color-focus-outer: #FFD337;
-    --color-focus-inner: var(--color-neutral-10);
-
-    /* Color - Extended */
-    --color-pink-lightest: #fbebf0;
-    --color-pink-lighter: #efadc4;
-    --color-pink-light: #e27098;
-    --color-pink: #d6336c;
-    --color-pink-dark: #b62b5c;
-    --color-pink-darker: #96244c;
-    --color-pink-darkest: #761c3b;
-
-    --color-grape-lightest: #f7ecfa;
-    --color-grape-lighter: #dfb2e9;
-    --color-grape-light: #c678d9;
-    --color-grape: #ae3ec9;
-    --color-grape-dark: #9435ab;
-    --color-grape-darker: #7a2b8d;
-    --color-grape-darkest: #60226f;
-
-    --color-violet-lightest: #f1edfd;
-    --color-violet-lighter: #c6b6f6;
-    --color-violet-light: #9b7fef;
-    --color-violet: #7048e8;
-    --color-violet-dark: #5f3dc5;
-    --color-violet-darker: #4e32a2;
-    --color-violet-darkest: #3e2880;
-
-    --color-indigo-lightest: #eceffd;
-    --color-indigo-lighter: #b3c1f7;
-    --color-indigo-light: #7b92f1;
-    --color-indigo: #4263eb;
-    --color-indigo-dark: #3854c8;
-    --color-indigo-darker: #2e45a5;
-    --color-indigo-darkest: #243681;
-
-    --color-blue-lightest: #e8f2fa;
-    --color-blue-lighter: #a3c9ea;
-    --color-blue-light: #5fa1db;
-    --color-blue: #1a79cb;
-    --color-blue-dark: #1667ad;
-    --color-blue-darker: #12558e;
-    --color-blue-darkest: #0e4370;
-
-    --color-cyan-lightest: #e7f2f4;
-    --color-cyan-lighter: #9eccd3;
-    --color-cyan-light: #56a6b2;
-    --color-cyan: #0d8091;
-    --color-cyan-dark: #0b6d7b;
-    --color-cyan-darker: #095a66;
-    --color-cyan-darkest: #074650;
-
-    --color-teal-lightest: #e6f2ef;
-    --color-teal-lighter: #9cccbd;
-    --color-teal-light: #52a58c;
-    --color-teal: #087f5b;
-    --color-teal-dark: #076c4d;
-    --color-teal-darker: #065940;
-    --color-teal-darkest: #044632;
-
-    --color-green-lightest: #ebf7ed;
-    --color-green-lighter: #afe0b8;
-    --color-green-light: #73c982;
-    --color-green: #37b24d;
-    --color-green-dark: #2f9741;
-    --color-green-darker: #267d36;
-    --color-green-darkest: #1e622a;
-
-    --color-orange-lightest: #fef0e6;
-    --color-orange-lighter: #fcc29c;
-    --color-orange-light: #f99551;
-    --color-orange: #f76707;
-    --color-orange-dark: #d25806;
-    --color-orange-darker: #ad4805;
-    --color-orange-darkest: #883904;
-
-
-    /* Color - Neutral */
-    --color-neutral-0: #ffffff;
-    --color-neutral-1: #f8f9fa;
-    --color-neutral-2: #f1f3f5;
-    --color-neutral-3: #e9ecef;
-    --color-neutral-4: #dee2e6;
-    --color-neutral-5: #ced4da;
-    --color-neutral-6: #adb5bd;
-    --color-neutral-7: #6a7178;
-    --color-neutral-8: #4f575e;
-    --color-neutral-9: #272b30;
-    --color-neutral-10: #101213;
-
-    /* Color - Semantic */
-    --color-error-light: #fceaea;
-    --color-error: #dc2020;
-    --color-warning-light: #fdf6e5;
-    --color-warning: #e9a100;
-    --color-success-light: #eaf3eb;
-    --color-success: #29823b;
-    --color-info-light: #e5f5fc;
-    --color-info: #017aad;
-
-    /* Space - Sizes */
-    --space-none: 0;
-    --space-xs: 4px;
-    --space-s: 8px;
-    --space-base: 16px;
-    --space-m: 24px;
-    --space-l: 32px;
-    --space-xl: 40px;
-    --space-xxl: 48px;
-
-    /* Border Radius */
-    --border-radius-none: 0;
-    --border-radius-soft: 4px;
-    --border-radius-rounded: 100px;
-    --border-radius-circle: 100%;
-
-    /* Border Size */
-    --border-size-none: 0;
-    --border-size-s: 1px;
-    --border-size-m: 2px;
-    --border-size-l: 3px;
-
-    /* Elevation / Shadow */
-    --shadow-none: none;
-    --shadow-xs: 0 1px 2px rgba(0, 0, 0, .1);
-    --shadow-s: 0 2px 4px rgba(0, 0, 0, .1);
-    --shadow-m: 0 4px 6px rgba(0, 0, 0, .1);
-    --shadow-l: 0 6px 8px rgba(0, 0, 0, .1);
-    --shadow-xl: 0 8px 10px rgba(0, 0, 0, .1);
-
-    /* App Settings */
-    --header-color: #ffffff;
-    --color-background-body: #f3f6f8;
-    --color-background-login: #ffffff;
-    --header-size: 56px;
-    --header-size-content: 48px;
-    --side-menu-size: 300px;
-    --bottom-bar-size: 56px;
-
-    /* iOS Safe Areas (Notch Support) */
-    --os-safe-area-top: env(safe-area-inset-top);
-    --os-safe-area-right: env(safe-area-inset-right);
-    --os-safe-area-bottom: env(safe-area-inset-bottom);
-    --os-safe-area-left: env(safe-area-inset-left);
 }
+/* ===================================================================== */
+/*  $9 - Custom Classes                                                  */
+/* ===================================================================== */
+.background-seat-red { background-color: var(--color-seat-red); }
+.text-seat-red { color: var(--color-seat-red); }
+
+.background-seat-red-light { background-color: var(--color-seat-red-light); }
+.text-seat-red-light { color: var(--color-seat-red-light); }
+
+.background-seat-red-lightest { background-color: var(--color-seat-red-lightest); }
+.text-seat-red-lightest { color: var(--color-seat-red-lightest); }
+
+.background-seat-orange { background-color: var(--color-seat-orange); }
+.text-seat-orange { color: var(--color-seat-orange); }
+
+.background-seat-orange-light { background-color: var(--color-seat-orange-light); }
+.text-seat-orange-light { color: var(--color-seat-orange-light); }
+
+.background-seat-orange-lightest { background-color: var(--color-seat-orange-lightest); }
+.text-seat-orange-lightest { color: var(--color-seat-orange-lightest); }
+
+.background-seat-beige { background-color: var(--color-seat-beige); }
+.text-seat-beige { color: var(--color-seat-beige); }
+
+.background-seat-yellow { background-color: var(--color-seat-yellow); }
+.text-seat-yellow { color: var(--color-seat-yellow); }
+
+.background-seat-yellow-dark { background-color: var(--color-seat-yellow-dark); }
+.text-seat-yellow-dark { color: var(--color-seat-yellow-dark); }
+
+.background-seat-green { background-color: var(--color-seat-green); }
+.text-seat-green { color: var(--color-seat-green); }
+
+.background-seat-green-light { background-color: var(--color-seat-green-light); }
+.text-seat-green-light { color: var(--color-seat-green-light); }
+
+.background-seat-lime { background-color: var(--color-seat-lime); }
+.text-seat-lime { color: var(--color-seat-lime); }
+
+.background-seat-cyan { background-color: var(--color-seat-cyan); }
+.text-seat-cyan { color: var(--color-seat-cyan); }
+
+.background-seat-cyan-light { background-color: var(--color-seat-cyan-light); }
+.text-seat-cyan-light { color: var(--color-seat-cyan-light); }
+
+.background-seat-teal { background-color: var(--color-seat-teal); }
+.text-seat-teal { color: var(--color-seat-teal); }
+
+.background-seat-blue { background-color: var(--color-seat-blue); }
+.text-seat-blue { color: var(--color-seat-blue); }
+
+.background-seat-blue-light { background-color: var(--color-seat-blue-light); }
+.text-seat-blue-light { color: var(--color-seat-blue-light); }
+
+.background-seat-grey-light { background-color: var(--color-seat-grey-light); }
+.text-seat-grey-light { color: var(--color-seat-grey-light); }
+
+.background-seat-grape { background-color: var(--color-seat-grape); }
+.text-seat-grape { color: var(--color-seat-grape); }
+
+.background-seat-grape-light { background-color: var(--color-seat-grape-light); }
+.text-seat-grape-light { color: var(--color-seat-grape-light); }
+
+.background-seat-grape-lightest { background-color: var(--color-seat-grape-lightest); }
+.text-seat-grape-lightest { color: var(--color-seat-grape-lightest); }
+
+.background-seat-brown { background-color: var(--color-seat-brown); }
+.text-seat-brown { color: var(--color-seat-brown); }
+
+.background-seat-brown-light { background-color: var(--color-seat-brown-light); }
+.text-seat-brown-light { color: var(--color-seat-brown-light); }
+
+.background-seat-brown-lightest { background-color: var(--color-seat-brown-lightest); }
+.text-seat-brown-lightest { color: var(--color-seat-brown-lightest); }
 
 /* ===================================================================== */
 /*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
@@ -413,6 +341,10 @@ a:active {
 /* ===================================================================== */
 /*       $2.5 - HTML Elements - Buttons                                  */
 /* ===================================================================== */
+.btn {
+    padding: var(--space-none) var(--space-xl);
+}
+
 .desktop .btn:not(.btn-cancel) {
     &:hover {
         filter: opacity(0.7);
@@ -481,7 +413,13 @@ a:active {
 .layout-side .submenu.active .submenu-header,
 .tablet .submenu.active .submenu-header,
 .phone .submenu.active .submenu-header {
+    background: rgba(234, 93, 26, 0.15);
     border-left: var(--border-size-m) solid transparent;
+    border-radius: var(--border-radius-soft);
+    height: 40px;
+    margin-bottom: var(--space-xs);
+    padding: var(--space-none) var(--space-base);
+    transition: all 200ms linear;
 }
 
 .layout-side .application-name {
@@ -491,6 +429,15 @@ a:active {
     top: var(--space-s);
     z-index: 101;
 }
+
+.layout-side .app-menu-links {
+    padding: var(--space-s);
+}
+
+.layout-side .submenu .submenu-header:hover {
+    background-color: var(--color-neutral-2);
+}
+
 /* ===================================================================== */
 /*              $4.1.3   - Patterns - Adaptive - MasterDetail            */
 /* ===================================================================== */
@@ -559,10 +506,6 @@ a:active {
 /* ===================================================================== */
 /*              $4.3.6   - Patterns - Interaction - DropdownSearch       */
 /* ===================================================================== */
-.choices.is-open.is-focused .choices__inner,
-.choices[data-type="select-multiple"].is-open.is-focused .choices__inner {
-    border: 0;
-}
 
 .choices__list--dropdown {
     .choices__item--selectable.is-highlighted {
@@ -659,4 +602,25 @@ a:active {
 [data-checkbox]:checked:before {
     background: var(--color-neutral-10);
     border: var(--border-size-s) solid var(--color-neutral-10);
+}
+
+/* ===================================================================== */
+/*       $5.11 - Widgets - Dropdown                                      */
+/* ===================================================================== */
+
+[data-dropdown] {
+
+    div.dropdown-popup-row-selected:hover,
+    div.dropdown-popup-row:hover,
+    div.dropdown-popup-row-selected {
+        background: var(--color-primary);
+        border-radius: var(--border-radius-soft);
+        color: var(--color-neutral-0);
+
+    }
+
+    .scrollable-list-with-scroll {
+        padding: var(--space-s);
+    }
+
 }
