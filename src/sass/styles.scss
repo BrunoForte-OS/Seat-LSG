@@ -164,6 +164,7 @@
     --font-size-base: 16px;
     --font-size-s: 14px;
     --font-size-xs: 12px;
+    --font-size-xxs: 10px;
 
 
     /* color - seat - extended */
@@ -203,90 +204,13 @@
     --font-medium: 500;
 
 }
-/* ===================================================================== */
-/*  $9 - Custom Classes                                                  */
-/* ===================================================================== */
-.background-seat-red { background-color: var(--color-seat-red); }
-.text-seat-red { color: var(--color-seat-red); }
 
-.background-seat-red-light { background-color: var(--color-seat-red-light); }
-.text-seat-red-light { color: var(--color-seat-red-light); }
-
-.background-seat-red-lightest { background-color: var(--color-seat-red-lightest); }
-.text-seat-red-lightest { color: var(--color-seat-red-lightest); }
-
-.background-seat-orange { background-color: var(--color-seat-orange); }
-.text-seat-orange { color: var(--color-seat-orange); }
-
-.background-seat-orange-light { background-color: var(--color-seat-orange-light); }
-.text-seat-orange-light { color: var(--color-seat-orange-light); }
-
-.background-seat-orange-lightest { background-color: var(--color-seat-orange-lightest); }
-.text-seat-orange-lightest { color: var(--color-seat-orange-lightest); }
-
-.background-seat-beige { background-color: var(--color-seat-beige); }
-.text-seat-beige { color: var(--color-seat-beige); }
-
-.background-seat-yellow { background-color: var(--color-seat-yellow); }
-.text-seat-yellow { color: var(--color-seat-yellow); }
-
-.background-seat-yellow-dark { background-color: var(--color-seat-yellow-dark); }
-.text-seat-yellow-dark { color: var(--color-seat-yellow-dark); }
-
-.background-seat-green { background-color: var(--color-seat-green); }
-.text-seat-green { color: var(--color-seat-green); }
-
-.background-seat-green-light { background-color: var(--color-seat-green-light); }
-.text-seat-green-light { color: var(--color-seat-green-light); }
-
-.background-seat-lime { background-color: var(--color-seat-lime); }
-.text-seat-lime { color: var(--color-seat-lime); }
-
-.background-seat-cyan { background-color: var(--color-seat-cyan); }
-.text-seat-cyan { color: var(--color-seat-cyan); }
-
-.background-seat-cyan-light { background-color: var(--color-seat-cyan-light); }
-.text-seat-cyan-light { color: var(--color-seat-cyan-light); }
-
-.background-seat-teal { background-color: var(--color-seat-teal); }
-.text-seat-teal { color: var(--color-seat-teal); }
-
-.background-seat-blue { background-color: var(--color-seat-blue); }
-.text-seat-blue { color: var(--color-seat-blue); }
-
-.background-seat-blue-light { background-color: var(--color-seat-blue-light); }
-.text-seat-blue-light { color: var(--color-seat-blue-light); }
-
-.background-seat-grey-light { background-color: var(--color-seat-grey-light); }
-.text-seat-grey-light { color: var(--color-seat-grey-light); }
-
-.background-seat-grape { background-color: var(--color-seat-grape); }
-.text-seat-grape { color: var(--color-seat-grape); }
-
-.background-seat-grape-light { background-color: var(--color-seat-grape-light); }
-.text-seat-grape-light { color: var(--color-seat-grape-light); }
-
-.background-seat-grape-lightest { background-color: var(--color-seat-grape-lightest); }
-.text-seat-grape-lightest { color: var(--color-seat-grape-lightest); }
-
-.background-seat-brown { background-color: var(--color-seat-brown); }
-.text-seat-brown { color: var(--color-seat-brown); }
-
-.background-seat-brown-light { background-color: var(--color-seat-brown-light); }
-.text-seat-brown-light { color: var(--color-seat-brown-light); }
-
-.background-seat-brown-lightest { background-color: var(--color-seat-brown-lightest); }
-.text-seat-brown-lightest { color: var(--color-seat-brown-lightest); }
 
 /* ===================================================================== */
 /*  $1 - Resets (https://necolas.github.io/normalize.css/)               */
 /* ===================================================================== */
 html {
     font-family: "Seat Bcn";
-}
-
-.text-primary-color {
-    color: var(--color-primary);
 }
 
 /* ===================================================================== */
@@ -354,7 +278,6 @@ a:active {
 
 .btn.btn-primary {
     &:hover:active {
-        border: 0;
         filter: brightness(0.9);
     }
 
@@ -363,7 +286,7 @@ a:active {
 .btn:not(.btn-cancel) {
     border: var(--border-size-m) solid currentColor;
 
-    &:hover:active {
+    &:not(.btn-primary):hover:active {
         background-color: rgba(234, 93, 26, 0.15);
         border: var(--border-size-m) solid currentColor;
     }
@@ -590,6 +513,18 @@ a:active {
 }
 
 /* ===================================================================== */
+/*              $4.5.6   - Patterns - Numbers - ProgressCircleFraction   */
+/* ===================================================================== */
+.progress-circle-medium .progress-circle-text-numerator {
+    font-size: var(--font-size-h4);
+}
+
+.progress-circle-text-numerator {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* ===================================================================== */
 /*       $5.7  - Widgets - ButtonGroup                                   */
 /* ===================================================================== */
 .button-group-item {
@@ -623,4 +558,216 @@ a:active {
         padding: var(--space-s);
     }
 
+}
+
+/* ===================================================================== */
+/*  $9 - Custom Classes                                                  */
+/* ===================================================================== */
+
+.text-primary-color {
+    color: var(--color-primary);
+}
+
+.font-size-xxs {
+    font-size: var(--font-size-xxs);
+}
+
+.background-seat-red {
+    background-color: var(--color-seat-red);
+}
+
+.text-seat-red {
+    color: var(--color-seat-red);
+}
+
+.background-seat-red-light {
+    background-color: var(--color-seat-red-light);
+}
+
+.text-seat-red-light {
+    color: var(--color-seat-red-light);
+}
+
+.background-seat-red-lightest {
+    background-color: var(--color-seat-red-lightest);
+}
+
+.text-seat-red-lightest {
+    color: var(--color-seat-red-lightest);
+}
+
+.background-seat-orange {
+    background-color: var(--color-seat-orange);
+}
+
+.text-seat-orange {
+    color: var(--color-seat-orange);
+}
+
+.background-seat-orange-light {
+    background-color: var(--color-seat-orange-light);
+}
+
+.text-seat-orange-light {
+    color: var(--color-seat-orange-light);
+}
+
+.background-seat-orange-lightest {
+    background-color: var(--color-seat-orange-lightest);
+}
+
+.text-seat-orange-lightest {
+    color: var(--color-seat-orange-lightest);
+}
+
+.background-seat-beige {
+    background-color: var(--color-seat-beige);
+}
+
+.text-seat-beige {
+    color: var(--color-seat-beige);
+}
+
+.background-seat-yellow {
+    background-color: var(--color-seat-yellow);
+}
+
+.text-seat-yellow {
+    color: var(--color-seat-yellow);
+}
+
+.background-seat-yellow-dark {
+    background-color: var(--color-seat-yellow-dark);
+}
+
+.text-seat-yellow-dark {
+    color: var(--color-seat-yellow-dark);
+}
+
+.background-seat-green {
+    background-color: var(--color-seat-green);
+}
+
+.text-seat-green {
+    color: var(--color-seat-green);
+}
+
+.background-seat-green-light {
+    background-color: var(--color-seat-green-light);
+}
+
+.text-seat-green-light {
+    color: var(--color-seat-green-light);
+}
+
+.background-seat-lime {
+    background-color: var(--color-seat-lime);
+}
+
+.text-seat-lime {
+    color: var(--color-seat-lime);
+}
+
+.background-seat-cyan {
+    background-color: var(--color-seat-cyan);
+}
+
+.text-seat-cyan {
+    color: var(--color-seat-cyan);
+}
+
+.background-seat-cyan-light {
+    background-color: var(--color-seat-cyan-light);
+}
+
+.text-seat-cyan-light {
+    color: var(--color-seat-cyan-light);
+}
+
+.background-seat-teal {
+    background-color: var(--color-seat-teal);
+}
+
+.text-seat-teal {
+    color: var(--color-seat-teal);
+}
+
+.background-seat-blue {
+    background-color: var(--color-seat-blue);
+}
+
+.text-seat-blue {
+    color: var(--color-seat-blue);
+}
+
+.background-seat-blue-light {
+    background-color: var(--color-seat-blue-light);
+}
+
+.text-seat-blue-light {
+    color: var(--color-seat-blue-light);
+}
+
+.background-seat-grey-light {
+    background-color: var(--color-seat-grey-light);
+}
+
+.text-seat-grey-light {
+    color: var(--color-seat-grey-light);
+}
+
+.background-seat-grape {
+    background-color: var(--color-seat-grape);
+}
+
+.text-seat-grape {
+    color: var(--color-seat-grape);
+}
+
+.background-seat-grape-light {
+    background-color: var(--color-seat-grape-light);
+}
+
+.text-seat-grape-light {
+    color: var(--color-seat-grape-light);
+}
+
+.background-seat-grape-lightest {
+    background-color: var(--color-seat-grape-lightest);
+}
+
+.text-seat-grape-lightest {
+    color: var(--color-seat-grape-lightest);
+}
+
+.background-seat-brown {
+    background-color: var(--color-seat-brown);
+}
+
+.text-seat-brown {
+    color: var(--color-seat-brown);
+}
+
+.background-seat-brown-light {
+    background-color: var(--color-seat-brown-light);
+}
+
+.text-seat-brown-light {
+    color: var(--color-seat-brown-light);
+}
+
+.background-seat-brown-lightest {
+    background-color: var(--color-seat-brown-lightest);
+}
+
+.text-seat-brown-lightest {
+    color: var(--color-seat-brown-lightest);
+}
+
+.min-height-170 {
+    min-height: 170px;
+}
+
+.min-height-287 {
+    min-height: 287px;
 }
