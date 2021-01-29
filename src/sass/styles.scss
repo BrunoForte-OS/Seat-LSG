@@ -304,6 +304,11 @@ a:active {
     }
 }
 
+.btn.btn-primary[disabled] {
+    background: var(--color-primary);
+    color: var(--color-neutral-0);
+    filter: opacity(0.3);
+}
 /* ===================================================================== */
 /*  $3.1.2 - Page Layout - Header Content 
 /* ===================================================================== */
@@ -519,9 +524,13 @@ a:active {
     font-size: var(--font-size-h4);
 }
 
-.progress-circle-text-numerator {
+.progress-circle-text-numerator { 
     color: var(--color-primary);
     font-weight: bold;
+}
+
+.progress-circle-medium .progressbar-text {
+    font-size: var(--font-size-h4);
 }
 
 /* ===================================================================== */
@@ -534,7 +543,8 @@ a:active {
 /* ===================================================================== */
 /*       $5.10 - Widgets - Checkbox                                      */
 /* ===================================================================== */
-[data-checkbox]:checked:before {
+[data-checkbox]:checked:before,
+.table .checkbox-intermediate:before {
     background: var(--color-neutral-10);
     border: var(--border-size-s) solid var(--color-neutral-10);
 }
